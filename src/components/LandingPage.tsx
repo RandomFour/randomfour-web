@@ -49,8 +49,7 @@ export default function LandingPage() {
                 </div>
               </h1>
               <p className="mb-8 text-xl text-muted-foreground">
-                A single-person studio crafting innovative digital experiences
-                that push the boundaries of technology.
+                A studio crafting innovative digital experiences.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#products">
