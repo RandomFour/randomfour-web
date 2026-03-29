@@ -1,4 +1,4 @@
-import { ArrowRight, Code, Cpu, Layers, Sparkles } from "lucide-react";
+import { ArrowRight, Layers, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function LandingPage() {
@@ -120,58 +120,37 @@ export default function LandingPage() {
                 </div>
               </a>
 
-              {/* E-commerce AI Product Card, TODO: make div into <a> link */}
-              <div
+              {/* Graspable Product Card */}
+              <a
+                href="https://graspable.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative overflow-hidden rounded-xl border bg-card transition-all hover:shadow-lg"
-                onClick={(e) => e.preventDefault()}
               >
                 <div className="aspect-video w-full overflow-hidden rounded-t-xl">
                   <div className="relative h-full w-full">
-                    <div className="absolute inset-0 bg-gradient-to-br from-orange/20 via-burnt-orange/20 to-red/20" />
-                    <div className="h-full w-full bg-muted flex items-center justify-center">
-                      <div className="relative h-24 w-24">
-                        <div className="absolute inset-0 rounded-full border-4 border-dashed border-orange animate-slow-spin" />
-                        <div className="absolute inset-4 rounded-full border-4 border-dashed border-burnt-orange animate-reverse-spin" />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="32"
-                            height="32"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="text-orange"
-                          >
-                            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
-                            <path d="M3 6h18" />
-                            <path d="M16 10a4 4 0 0 1-8 0" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-violet-500/20 via-blue-500/20 to-orange/25" />
+                    <img
+                      src="/graspable.png"
+                      alt="Graspable.dev preview"
+                      className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
                   </div>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2">
-                      <h3 className="text-xl font-bold">AI Shopping Assistant</h3>
-                      <span className="rounded-full bg-orange/10 px-2 py-1 text-xs text-orange">
-                        Coming Soon
-                      </span>
-                    </div>
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-orange/10">
-                      <ArrowRight className="h-4 w-4 text-orange" />
+                    <h3 className="text-xl font-bold">Graspable.dev</h3>
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-500/10">
+                      <ArrowRight className="h-4 w-4 text-blue-600" />
                     </div>
                   </div>
                   <p className="text-muted-foreground">
-                    A stealth-mode project revolutionizing e-commerce with
-                    AI-powered personalization and customer insights.
+                    An AI-native WebXR builder for creating immersive XR apps
+                    across headsets, smart glasses, and phones.
                   </p>
                 </div>
-              </div>
+              </a>
 
               {/* XR Math Learning Product Card, TODO: make div into <a> link */}
             <div
